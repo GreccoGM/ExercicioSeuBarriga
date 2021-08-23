@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.concurrent.TimeUnit;
+
 public class Dsl {
 
     private static WebDriver driver;
@@ -39,9 +41,8 @@ public class Dsl {
         combo.selectByVisibleText(valorLista);
     }
 
-
-    public void enviarDadoId(String idCampo, String nomeConta){
-        driver.findElement(By.id(idCampo)).sendKeys(nomeConta);
+    public void enviarDadoId(String idCampo, String valor){
+        driver.findElement(By.id(idCampo)).sendKeys(valor);
     }
 
     public String pegarTextoPorLink(String texto){

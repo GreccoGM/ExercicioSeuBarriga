@@ -10,7 +10,6 @@ public class TesteLogin extends BaseTestes {
 
     @Before
     public void config(){
-        login.realizarLogin();
         setDsl();
     }
 
