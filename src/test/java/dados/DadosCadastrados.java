@@ -1,4 +1,4 @@
-package Dados;
+package dados;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +19,6 @@ public class DadosCadastrados {
         List<WebElement> tableRows = tabela.findElements(By.cssSelector("#"+idTabela+" > tbody > tr"));
 
         Integer tamanho = tableRows.size();
-        //System.out.println(tamanho);
 
         return tamanho;
     }
@@ -48,21 +47,4 @@ public class DadosCadastrados {
 
         return listaErros;
     }
-
-    public ArrayList<String> pegarContasCadastradas (){
-        ArrayList<String> listaMovimentacao = new ArrayList<>();
-
-        WebElement lista = driver.findElement(By.cssSelector("#tabelaExtrato > tbody > tr"));
-        List<WebElement> listaRows = lista.findElements(By.cssSelector("td:nth-child(1)"));
-
-        for(WebElement td: listaRows) {
-            String texto = td.getText();
-            listaMovimentacao.add(texto);
-            System.out.println(listaMovimentacao);
-        }
-
-        return listaMovimentacao;
-    }
 }
-/*#tabelaExtrato > tbody > tr:nth-child(1) > td:nth-child(1)
-#tabelaExtrato > tbody > tr:nth-child(2) > td:nth-child(1)*/
