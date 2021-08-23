@@ -1,6 +1,6 @@
 package dados;
 
-import DSL.Dsl;
+import dsl.Dsl;
 import org.openqa.selenium.WebDriver;
 
 public class Login extends Dsl{

@@ -1,9 +1,8 @@
 package dados;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import DSL.Dsl;
+import dsl.Dsl;
 
 import java.util.concurrent.TimeUnit;
 

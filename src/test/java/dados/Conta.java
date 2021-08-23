@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import DSL.Dsl;
+import dsl.Dsl;
 
 public class Conta extends Dsl {
 
